@@ -35,7 +35,6 @@ class QuestionController extends Controller
         $data = $request->validated();
         $question = Question::create($data);
         return new QuestionResource($question);
-
     }
 
 
